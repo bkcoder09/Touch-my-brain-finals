@@ -4,3 +4,10 @@ h1{
   .body-background{
     background-image: url(bg1.jpg);
   }
+
+#myCanvas{
+  background-color:white;
+  border-style:dotted;
+  border-width:5px;
+  border-color:aquamarine;
+}

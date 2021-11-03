@@ -6,7 +6,7 @@ var last_X_pos, last_Y_pos;
 var mouseevent="empty";
 
 var color="aquamarine";
-var line_width=3;
+var line_width=5;
 
 canvas.addEventListener("mousedown", my_mousedown);
 function my_mousedown(e){
@@ -25,8 +25,8 @@ function my_mouseleave(e){
 
 canvas.addEventListener("mousemove", my_mousemove);
 function my_mousemove(e){
-    var current_X_pos = e.clientX-canvas-offsetLeft;
-    var current_Y_pos = e.clientY-canvas-offsetTop;
+    var current_X_pos = e.clientX-canvas.offsetLeft;
+    var current_Y_pos = e.clientY-canvas.offsetTop;
     var last_X_pos = "";
     var last_Y_pos = "";
     if(mouseevent == "mousedown"){
